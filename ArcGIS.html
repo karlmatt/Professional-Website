@@ -4,6 +4,32 @@
     <meta charset="utf-8">
     <meta name="author" content="Matt Karl">
     <title>Matt's Professional Page</title>
+    <style>
+      nav {
+            height: 50px;
+            flex: 100%;
+            display: flex;
+          }
+
+      nav ul {
+                padding: 0;
+                list-style-type: none;
+                flex: 2;
+                display: flex;
+              }
+
+      nav li {
+                display: inline;
+                text-align: center;
+                flex: 1;
+              }
+
+      .Pics {
+                      display: inline;
+                      text-align: center;
+                      display: flex;
+                    }              
+    </style>
   </head>
   <body>
     <header>
@@ -31,6 +57,7 @@
         <p><strong>Mt. St. Helens Exercise</strong></p>
         <p>Applications: ArcMap 10.5; ArcScene 10.5</p>
         <p>The purpose of this exercise was to create hillshade maps from digital elevation map (DEM) of Mt. St. Helens before and after the 1980 explosion in ArcMap 10.5. A 3D map was also generated of the surface topography of Mt. St. Helens after the 1980 explosion using ArcScene 10.5. </p>
+        <div class="Pics">
         <figure>
            <a href="Pro_Page_Photos/Before_1980.svg"><img src="Pro_Page_Photos/Before_1980.svg"
            width="341"
@@ -52,23 +79,27 @@
            alt="3D map of Mt. St. Helens after the 1980 eruption made in ArcScene 10.5"></a>
            <figcaption>3D map of Mt. St. Helens after the 1980 eruption made in ArcScene 10.5</figcaption> 
         </figure>
+        </div>
       </article>  
       <article>
         <p><strong>Clinton County Quadrangle Exercise</strong></p>
         <p>Applications: ArcCatalog 10.5; ArcMap 10.5</p>
         <p>The purpose of this exercise was to create hillshade maps from digital elevation map (DEM) and plot it with an orthoquad image of the Clinton County Quadrangle. The process involved in this exercise could easily be modified for other locations. 
+      <div class="Pics">
       <figure>  
            <a href="Pro_Page_Photos/clintonmap.svg"><img src="Pro_Page_Photos/clintonmap.svg"
            width="341"
            height="400"
            alt="Hillshade map overlaid with the orthoquad image of the Clinton County Quadrangle."></a>
            <figcaption>Hillshade map overlaid with the orthoquad image of the Clinton County Quadrangle made in ArcMap 10.5.</figcaption>
-      </figure>   
+      </figure>
+      </div>   
       </article>
       <article>
         <p><strong>Adirondacks Exercise</strong></p>
         <p>Applications: ArcCatalog 10.5; ArcMap 10.5</p>
         <p>The purpose of this exercise is to analyze the correlation between topography and bedrock geology, where gneiss, which is resistant to erosion by weathering makes up the high topography, and areas where marble is located has eroded into valleys from weathering produced by rivers. This exercise allowed me to practice manipulating a variety of shape (.shp) files and creating finished maps.
+      <div class="Pics">
       <figure>    
         <a href="Pro_Page_Photos/Adk_map.svg"><img src="Pro_Page_Photos/Adk_map.svg"
            width="341"
@@ -82,12 +113,14 @@
            height="400"
            alt="Adirondacks Geology."></a>
            <figcaption>Adirondacks Geology made in ArcMap 10.5. Low topography is erodable marble, high topography is erosion-resistant gneiss.</figcaption>
-      </figure>   
+      </figure>
+      </div>   
       </article>
       <article> 
         <h2>Completed Tutorials <a href="http://learn.arcgis.com/en/gallery/">learn.arcgis.com/en/gallery</a></h2>
         <p><strong>Get Started with ArcGIS Online</strong> Learn the basics of making maps online. </p>
         <p>The purpose of this tutorial was to add layers, spreadsheet data, map symbols, configure pop-up windows and create a web app using a Hawaiian dataset including the location of major volcanoes, flow hazard areas, shelters and roads.</p>
+        <div class="Pics">
         <figure>
           <a href="Pro_Page_Photos/HawaiiMap.png"><img src="Pro_Page_Photos/HawaiiMap.png"
              width="400"
@@ -95,10 +128,12 @@
              alt="Hawaii Lava Flow map."></a>
              <figcaption>Hawaii Lava Flow map: with major volcanoes, hazard zones, lava flow shelters and major highways displayed in ArcGIS Online.</figcaption>
         </figure>
+        <div>
       </article>
       <article>
         <p><strong>Identify Landslide Risk Areas in Colorado</strong> Analyze soil maps to predict future mud flows in rain-soaked Colorado.</p>
         <p>The purpose of this tutorial was to open up a geologic hazard map for Boulder County, Colorado and look at areas of overlap between the high hazard areas and rivers which had flooded to +200m, and to mark those those intersections with yellow fill and label with landslide symbols. This tutorial also covered enriching those intersections with demographic and landscape statistics that would show up in the pop-up windows.</p>
+        <div class="Pics">
         <figure>
           <a href="Pro_Page_Photos/BoulderHazard.png"><img src="Pro_Page_Photos/BoulderHazard.png"
              width="400"
@@ -106,17 +141,20 @@
              alt="Boulder County Colorado landslide map."></a>
              <figcaption>Boulder County Colorado landslide hazard map: geologic hazard, stream overflow, and landslide hazard locations indicated in ArcGIS Online.</figcaption>
         </figure> 
+        </div>
       </article>
       <article>
         <p><strong>No Dumping - Drains to Ocean</strong> Learn about finding upstream watersheds and downstream flow paths from point locations.</p>
         <p>The purpose of this tutorial was to add a storm drain to a map near Blackman Elementary School, Tennessee, then plot the watershed that feeds the storm drain, and then calculate the flow path of water from the the storm drain.</p>
+        <div class="Pics">
         <figure>
           <a href="Pro_Page_Photos/FlowMap.png"><img src="Pro_Page_Photos/FlowMap.png"
              width="400"
              height="341"
              alt="Blackman Elementary School, Tennessee drainage flow path map."></a>
              <figcaption>Blackman Elementary School, Tennessee drainage flow path map made in ArcGIS Online.</figcaption>
-        </figure>   
+        </figure>
+        </div>   
       </article> 
       
     </main>

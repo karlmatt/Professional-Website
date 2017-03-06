@@ -4,6 +4,39 @@
     <meta charset="utf-8">
     <meta name="author" content="Matt Karl">
     <title>Matt's Professional Page</title>
+    <style>
+      nav {
+            height: 50px;
+            flex: 100%;
+            display: flex;
+          }
+
+      nav ul {
+                padding: 0;
+                list-style-type: none;
+                flex: 2;
+                display: flex;
+              }
+
+      nav li {
+                display: inline;
+                text-align: center;
+                flex: 1;
+              }
+      .Pics {
+              display: inline;
+              text-align: center;
+              display: flex;
+            } 
+
+      .rotate180 {
+                  -webkit-transform: rotate(180deg);
+                  -moz-transform: rotate(180deg);
+                  -o-transform: rotate(180deg);
+                  -ms-transform: rotate(180deg);
+                  transform: rotate(180deg);
+                }      
+    </style>
   </head>
   <body>
     <header>
@@ -26,14 +59,14 @@
         <h1>Air Monitoring Projects</h1>
         <p>I supervised abatement teams and conducted representative exposure, work area perimeter and final clearance air sampling for asbestos abatement projects across the mid-Michigan area. Under my direction abatement teams removed asbestos containing material in accordance with federal, state and local regulations. I conducted field laboratory analysis of all phase contrast microscopy (PCM) air samples according to the NIOSH 7400 Method, Issue #2 for determining the concentration of airborne asbestos fibers. I kept a field notebook of daily operations and completed air-monitoring reports for each project using Microsoft Office 2013 software.</p>
       </article>
-
+      <div class="Pics">
       <figure>
-        <a href="Pro_Page_Photos/PPE_070616.jpeg"><img src="Pro_Page_Photos/PPE_070616.jpeg"
+        <a href="Pro_Page_Photos/PPE_070616.jpeg"><img src="Pro_Page_Photos/PPE_070616.jpeg" class="rotate180"
            width="400"
            height="341"
            alt="Me, Matt Karl, in personal protective equipment while abatement workers remove floor tile in the background"></a>
 
-        <figcaption>Myself, in personal protective equipment (PPE) while abatement workers remove floor tile in the background.</figcaption>
+        <figcaption>Myself, in personal protective equipment (PPE) while abatement workers remove asbestos containing floor tile and mastic in the background.</figcaption>
       </figure>
 
       <figure>
@@ -42,9 +75,9 @@
            height="341"
            alt="Abatement worker removes pipe fitting insulation using a glovebag"></a>
 
-        <figcaption>Abatement worker in PPE and personal pump removes pipe fitting insulation using a glovebag.</figcaption>
+        <figcaption>Abatement worker wearing PPE and a personal pump for exposure monitoring removes an asbestos containing pipe fitting insulation using a glovebag.</figcaption>
       </figure>    
-
+      </div>
     </main>
 
   </body>
