@@ -83,7 +83,7 @@
 
       <article>
       <h2>1.3 Basic Interaction</h2>
-      <p>Once the scene is set up, the seismic data can be loaded in. Best practice is to pre-load all of the seismic data if the computer you are working on has sufficient memory to do so. Once the seismic data is loaded into the scene, the inline can be manipulated from the Slice Position Toolbar or using your mouse in the scene, as shown in the video below.</p>
+      <p>Once the scene is set up, the seismic data can be loaded in. Best practice is to pre-load all of the seismic data if the computer you are working on has sufficient memory to do so. Once the seismic data is loaded into the scene, the inline can be manipulated from the Slice Position Toolbar or using your mouse in the scene.</p>
 
         <figure>
            <a href="OpendTect_Media/F3_Demo_Inline.png"><img src="OpendTect_Media/F3_Demo_Inline.png"
@@ -93,22 +93,28 @@
            <figcaption>Scene with 4 dip-steered median filtered seismic inline displayed.</figcaption>
         </figure>
       
-        <video src="OpendTect_Media/F3_Demo_4DipSteerMedFilter.mov" controls width="500" height="500">
-           <p>Here is a <a href="OpendTect_Media/F3_Demo_4DipSteerMedFilter.mov">link to the video</a> instead.</p> 
-        </video>
       </article>
 
       <article>
       <h2>1.4 Seismic Interpretation</h2>
-      <p>After initial inspection of the data, further analysis can be performed. The tutorial outlines how to tie well data to seismic in order to determine which sesimic events occur to which geologic markers. You can also pick seismic horizons in either the 3D or 2D viewer. The first video below is illustrating the functionality of the 3D Autotracker. Also, both large scale and small scale faults can be identified and picked from the offsets in the layers of the seismic data. The second video below shows the result of tracking one of the major faults through multiple inline positions of the dip-steered median filtered seismic data. Finally, you can convert the z-axis of the seismic data from time to depth if you have a velocity conversion (ASCII file with format X-Y-Time-Vrms). The seismic data can then be converted for inlines (as shown in the image below the videos), volumes and horizons.</p>
+      <p>After initial inspection of the data, further analysis can be performed. The tutorial outlines how to tie well data to seismic in order to determine which sesimic events occur to which geologic markers. You can also pick seismic horizons in either the 3D or 2D viewer. The first image below is illustrating the functionality of the 3D Autotracker. Also, both large scale and small scale faults can be identified and picked from the offsets in the layers of the seismic data. The second image below shows the result of tracking one of the major faults through multiple inline positions of the dip-steered median filtered seismic data. Finally, you can convert the z-axis of the seismic data from time to depth if you have a velocity conversion (ASCII file with format X-Y-Time-Vrms). The seismic data can then be converted for inlines as shown in the third image below, as well as for volumes and horizons.</p>
 
-      <video src="OpendTect_Media/F3_Demo_3Dautotrackhorizon.mov" controls width="500" height="500">
-           <p>Here is a <a href="OpendTect_Media/F3_Demo_3Dautotrackhorizon.mov">link to the video</a> instead.</p> 
-      </video>
+      <div class="Pics">
+      <figure>
+           <a href="OpendTect_Media/F3_Demo_3DAutoTrackHorizon.png"><img src="OpendTect_Media/F3_Demo_3DAutoTrackHorizon.png"
+           width="400"
+           height="250"
+           alt="Inline displaying 3D auto track generated horizon."></a>
+           <figcaption>Inline displaying dip steered median filtered seismic data with 3D auto track generated horizon in green.</figcaption>
+      </figure>
 
-      <video src="OpendTect_Media/F3_Demo_FaultPlaneEx.mov" controls width="500" height="500">
-           <p>Here is a <a href="OpendTect_Media/F3_Demo_FaultPlaneEx.mov">link to the video</a> instead.</p> 
-      </video>  
+       <figure>
+           <a href="OpendTect_Media/F3_Demo_FaultPlane.png"><img src="OpendTect_Media/F3_Demo_FaultPlane.png"
+           width="400"
+           height="250"
+           alt="Inline displaying fault plane surface."></a>
+           <figcaption>Inline displaying dip steered median filtered seismic data with picked fault plane surface in pink.</figcaption>
+      </figure>  
 
       <figure>
            <a href="OpendTect_Media/F3_Demo_TimeDepthVolConv.png"><img src="OpendTect_Media/F3_Demo_TimeDepthVolConv.png"
@@ -117,30 +123,49 @@
            alt="(Left) Dip-steered median filtered seismic inline with z-axis in time (ms). (Right) The same inline converted so that the z-axis is in depth (m)."></a>
            <figcaption>(Left) Dip-steered median filtered seismic inline with z-axis in time (ms). (Right) The same inline converted so that the z-axis is in depth (m).</figcaption>
       </figure>
+      </div>
 
       </article>
 
       <article>
       <h2>1.5 Attribute Analysis and Cross-plots</h2>
-      <p>Seismic attributes are measured, computed or implied quantities obtained from the seismic data for the purposes of data visualization and integration in 2D and 3D. In the tutorial, the first example centers around bright spot detection and visualization. Bright spots are associated with hydrocarbons, and result because the different acoustic energy of the hydrocarbons vs. the surrounding sedimentary layers. The first video below shows first the dip-steered median filtered seismic inline, then the acoustic energy attribute inline, then the energy attribute volume of a bright spot situated at ~500 ms depth.</p> 
-      <p>The second example involves spectral decomposition to produce a continuous time-frequency spectrum of a seismic trace using either a fast fourier transform or continuous waveform transformation. The resulting attribute can provide addtional information about stratigraphic/structural features or hydrocarbon attenuation/thickness along an evaluated horizon. The second video below shows how you can pick out the main three frequencys present in the dip-steered median filtered seismic data (24, 44, 64Hz) and then turn the resultant spectral decomposition results into layers to be displayed in the 3D viewer. There you can identify several paleostream channels below the interpreted horizon as well as the major fault trace as observed in the fault plane example.</p>
-      <p> Attributes can be cross-plot against each other in order to illustrate what seismic features cause the different major frequencies. The third video below shows how the spectral decomposition results from the 24 and 44Hz frequencies when cross-plot against each other, actually result from different regions within the bright spot on the MFS4 horizon. The 44Hz frequencies result from the middle of the bright spot, and the 24Hz frequencies result from the exterior. This seems to imply the hydrocarbons are thicker in the middle than the edge of the bright spot. All of the attributes that can be collected from well data can be cross-plot against each other to look for trends in that data as well. Finally, the tutorial illustrates how you can perform a Bayesian inversion on the spectral decomposition attribute to look and see if other similar frequencies (24, 44Hz) to the first bright spot we selected are present on the same evaluated horizon. The fourth video shows the results of the Bayesian inversion plotted in the 3D viewer.</p>
-      
-       <video src="OpendTect_Media/F3_Demo_BrightSpotEnergy.mov" controls width="500" height="500">
-           <p>Here is a <a href="OpendTect_Media/F3_Demo_BrightSpotEnergy.mov">link to the video</a> instead.</p> 
-      </video>
+      <p>Seismic attributes are measured, computed or implied quantities obtained from the seismic data for the purposes of data visualization and integration in 2D and 3D. In the tutorial, the first example centers around bright spot detection and visualization. Bright spots are associated with hydrocarbons, and result because the different acoustic energy of the hydrocarbons vs. the surrounding sedimentary layers. The first image below shows first the dip-steered median filtered seismic inline, then the acoustic energy attribute inline, then the energy attribute volume of a bright spot situated at ~500 ms depth.</p> 
+      <p>The second example involves spectral decomposition to produce a continuous time-frequency spectrum of a seismic trace using either a fast fourier transform or continuous waveform transformation. The resulting attribute can provide addtional information about stratigraphic/structural features or hydrocarbon attenuation/thickness along an evaluated horizon. The second image below shows how you can pick out the main three frequencys present in the dip-steered median filtered seismic data (24, 44, 64Hz) and then turn the resultant spectral decomposition results into layers to be displayed in the 3D viewer. There you can identify several paleostream channels below the interpreted horizon as well as the major fault trace as observed in the fault plane example.</p>
+      <p> Attributes can be cross-plot against each other in order to illustrate what seismic features cause the different major frequencies. The third image below shows how the spectral decomposition results from the 24 and 44Hz frequencies when cross-plot against each other, actually result from different regions within the bright spot on the MFS4 horizon. The 44Hz frequencies result from the middle of the bright spot, and the 24Hz frequencies result from the exterior. This seems to imply the hydrocarbons are thicker in the middle than the edge of the bright spot. All of the attributes that can be collected from well data can be cross-plot against each other to look for trends in that data as well. Finally, the tutorial illustrates how you can perform a Bayesian inversion on the spectral decomposition attribute to look and see if other similar frequencies (24, 44Hz) to the first bright spot we selected are present on the same evaluated horizon. The fourth image shows an example of the results of the Bayesian inversion plotted in the 3D viewer.</p>
 
-      <video src="OpendTect_Media/F3_Demo_SpectralDecomposition.mov" controls width="500" height="500">
-           <p>Here is a <a href="OpendTect_Media/F3_Demo_SpectralDecomposition.mov">link to the video</a> instead.</p> 
-      </video>
+      <div class="Pics">
+      <figure>
+           <a href="OpendTect_Media/F3_Demo_BrightSpot.png"><img src="OpendTect_Media/F3_Demo_BrightSpot.png"
+           width="400"
+           height="250"
+           alt="Inline displaying the attribute seismic energy in red/yellow and hydrocarbon volume in blue/green."></a>
+           <figcaption>Inline displaying the attribute seismic energy in red/yellow and seismic energy volume in blue/green.</figcaption>
+      </figure>
 
-      <video src="OpendTect_Media/F3_Demo_Crossplot_AtAt.mov" controls width="500" height="500">
-           <p>Here is a <a href="OpendTect_Media/F3_Demo_Crossplot_AtAt.mov">link to the video</a> instead.</p> 
-      </video>
+      <figure>
+           <a href="OpendTect_Media/F3_Demo_SpectralDecomposition.png"><img src="OpendTect_Media/F3_Demo_SpectralDecomposition.png"
+           width="400"
+           height="250"
+           alt="3D Seismic horizon with attribute spectral decomposition view looking down the z-axis."></a>
+           <figcaption>3D Seismic horizon with attribute spectral decomposition view looking down the z-axis.</figcaption>
+      </figure>
 
-      <video src="OpendTect_Media/F3_Demo_BayesianInversion.mov" controls width="500" height="500">
-           <p>Here is a <a href="OpendTect_Media/F3_Demo_BayesianInversion.mov">link to the video</a> instead.</p> 
-      </video>
+      <figure>
+           <a href="OpendTect_Media/F3_Demo_Crossplot_AtAt.png"><img src="OpendTect_Media/F3_Demo_Crossplot_AtAt.png"
+           width="400"
+           height="250"
+           alt="3D Seismic horizon with polygon drawn around one of the hydrocarbon bright spots and the 24Hz and 44Hz frequencies plotted with view looking down the z-axis."></a>
+           <figcaption>3D Seismic horizon with polygon drawn around one of the hydrocarbon bright spots and the 24Hz and 44Hz frequencies plotted with view looking down the z-axis.</figcaption>
+      </figure>
+      </div>
+
+       <figure>
+           <a href="OpendTect_Media/F3_Demo_BayesianInversionConfidence.png"><img src="OpendTect_Media/F3_Demo_BayesianInversionConfidence.png"
+           width="400"
+           height="250"
+           alt="3D Seismic horizon with attribute of confidence of match calculated from the Bayesian inversion in green/yellow with view looking down the z-axis."></a>
+           <figcaption>3D Seismic horizon with attribute of confidence of match calculated from the Bayesian inversion in green/yellow with view looking down the z-axis.</figcaption>
+      </figure>
 
       </article>
 
