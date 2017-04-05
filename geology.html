@@ -23,6 +23,12 @@
                 text-align: center;
                 flex: 1;
               }
+
+      .Pics {
+                      display: inline;
+                      text-align: center;
+                      display: flex;
+                    } 
     </style>
   </head>
   <body>
@@ -43,6 +49,79 @@
     </nav> 
 
     <main>
+      <article>
+      <h1>Science Education Resource Center (SERC) at Carleton College and the National Association of Geoscience Teachers (NAGT)</h1>
+        <p>I've currently been reviewing MATLAB exercises posted on <a href=https://serc.carleton.edu>serc.carleton.edu</a> to practice working with real-world data and geoscience problems and to display some of my capabilities using MATLAB to visualize and analyze that data.</p>
+      <h2>Using Univariate Statistics to Understand Regional Drainage Patterns <a href=https://serc.carleton.edu/NAGTWorkshops/data_models/matlab15/activities/115203.html>link</a></h2> 
+        <p>The purpose of this activity was to plot histograms of, then fit gaussian distribution curves to, measurements of organic matter content in sediment samples from freshwater deltas. T-test were then conducted to quantitatively distinguish whether the samples were from different sedimentary source regions.</p> 
+        <div class="Pics">
+        <figure>
+           <a href="MATLAB_figures/Activ01_fig1.png"><img src="MATLAB_figures/Activ01_fig1.png"
+           width="400"
+           height="250"
+           alt="MATLAB figure comparing the organic matter content sediment samples from the east side of the lake"></a>
+           <figcaption>The sediment data samples from the east side of the lake plotted as histograms in red and blue. The corresponding normal Gaussian distributions are plotted as lines over the histogram. The results of the t-test indicate that the sediments from the east side of the lake are from unique sources. h_E = 1, which indicates a rejection of the null hypothesis at the 5% significance level, which means that the two data sets from the east side of the lake are statistically unique. This indicates that they were sourced from different fluvial channels.
+           </figcaption>
+        </figure>
+        <figure> 
+           <a href="MATLAB_figures/Activ01_fig2.png"><img src="MATLAB_figures/Activ01_fig2.png"
+           width="400"
+           height="250"
+           alt="MATLAB figure comparing the organic matter content sediment samples from the west side of the lake"></a>
+           <figcaption>The sediment data samples from the west side of the lake plotted as histograms in red and blue. The corresponding normal Gaussian distributions are plotted as lines over the histogram. The results of the t-test indicate that the sediments from the west side of the lake are from unique sources. h_W = 0, which indicates a failure to reject the null hypothesis at the 5% significance level, which means that the two data sets from the west side of the lake are not statistically unique. This indicates that they were sourced from the same fluvial channel. 
+           </figcaption>
+        </figure>
+        </div>
+      <h2>Thermal Evolution of the Oceanic Lithosphere <a href=https://serc.carleton.edu/NAGTWorkshops/data_models/matlab15/activities/115163.html>link</a></h2>
+        <p>The purpose of this activity was to use the half-space cooling model  of the oceanic lithosphere Turcotte and Schubert (2002) and plot the thermal boundary layers and then use that model to estimate the seafloor bathymetry. I used both the more detailed equation that used defined values for the coefficient of thermal expansion, density and temperature; I also included a simplified model that just uses a set constant for comparison (see the second figure, and note the difference between the red and blue lines) The more detailed method predicts a deeper seafloor bathymetry, while the simplified model is shallower. The estimated seafloor bathymetry was then compared to data extracted from the GMRT Grid v3.3 using the GeoMapApp v3.6.4 to evaluate the effectiveness of the model. The model appears to be accurate until >~70 Ma or ~900 km from the mid-Atlantic ridge. The reason is because there is not much thermal difference in the oceanic crust >~70 Ma; this flattening could possibly be caused by adding heat to the base of the lithosphere.</p>
+        <div class="Pics">
+        <figure>
+           <a href="MATLAB_figures/HalfSpaceCooling.png"><img src="MATLAB_figures/HalfSpaceCooling.png"
+           width="400"
+           height="250"
+           alt="MATLAB figure showing the half-space cooling model"></a>
+           <figcaption> The half-space cooling model showing isotherms at 200&deg;C from 0-100km depth and 0-150Ma plate age.
+           </figcaption>
+        </figure>
+        <figure> 
+           <a href="MATLAB_figures/PredictedSeafloorBath.png"><img src="MATLAB_figures/PredictedSeafloorBath.png"
+           width="400"
+           height="250"
+           alt="MATLAB figure comparing the predicted seafloor bathymetry from the heat-space cooling equation and the simplified model for seafloor bathymetry"></a>
+           <figcaption> The first subplot shows the seafloor bathymetry vs plate age predicted by the models based on the half-space cooling model (calculated, blue) and the simplified approximation (approximated, red). The second subplot shows the seafloor bathymetry vs distance from the mid-ocean ridge predicted by the models based on the half-space cooling model (calculated, blue) and the simplified approximation (approximated, red) and assuming a half-spreading rate of 1.25 cm/yr.
+           </figcaption>
+        </figure>
+        <figure> 
+           <a href="MATLAB_figures/SeafloorBathCompare.png"><img src="MATLAB_figures/SeafloorBathCompare.png"
+           width="400"
+           height="250"
+           alt="MATLAB figure comparing the predicted seafloor bathymetry to GMRT version 3.3"></a>
+           <figcaption> This plot shows the seafloor bathymetry vs distance from the mid-ocean ridge predicted by the models based on the half-space cooling model (calculated, blue) and the simplified approximation (approximated, red) vs the the bathymetry data extracted from the GMRT Grid v3.3 from the mid-Atlantic ridge to the Eastern North American Margin (GMRT 3.3 profile,green).
+           </figcaption>
+        </figure>
+        </div>
+      <h2>Introduction to MATLAB for Geomorphology <a href=http://serc.carleton.edu/NAGTWorkshops/data_models/matlab15/activities/115077.html>link</a></h2> 
+        <p>The purpose of this activity was to plot the change in shape of a hillslope over time using a simple diffusion equation to describe the sediment transport.</p>
+        <figure> 
+           <a href="MATLAB_figures/Hillslope_Erosion.png"><img src="MATLAB_figures/Hillslope_Erosion.png"
+           width="400"
+           height="250"
+           alt="MATLAB figure showing the change in shape of a hillslope over 0-5000 years"></a>
+           <figcaption> This plot shows the the change in the shape of a hillslope with lines plotted at 0, 1000, 2000, 3000, 4000 and 5000 years.
+           </figcaption>
+        </figure>
+      <h2>Isostasy and Crustal Thickness <a href=http://serc.carleton.edu/NAGTWorkshops/data_models/matlab15/activities/118686.html>link</a></h2>
+        <p>The purpose of this activity was to use the calculation for Airy Isostasy to estimate the crustal thickness beneath 5 mountains around the world, and then compare the estimated crustal thicknesses to a published crustal thickness grid (Laske, Masters &amp; Pasyanos, 2013) to evaluate the effectiveness of the model. As observed in the figure below, the Airy Isostasy model over-estimates the crustal thickness for the selected mountains. This is due to several factors. First, the crustal thickness grid has a resolution of 1x1 degree, and therefore the crustal thicknesses used for comparison are 0.2225-0.6474 degrees away from the location of the mountain peaks used for the Airy Isostasy model calculation. Also, the Airy Isostasy model makes a lot of assumptions about the composition and structure of the crust. I think the largest factor influencing the difference is the addition of an "average crustal thickness" of 30 km to all of the crustal thicknesses calculated.</p>
+        <figure> 
+           <a href="MATLAB_figures/CrustalThicknessCompare.png"><img src="MATLAB_figures/CrustalThicknessCompare.png"
+           width="400"
+           height="250"
+           alt="MATLAB figure comparing the crustal thicknesses beneath 5 mountains calculated assuming Airy Isostasy vs the crustal thickness grid of (Laske, Masters &amp; Pasyanos, 2013)"></a>
+           <figcaption> This plot shows the crustal thicknesses beneath 5 mountains calculated assuming Airy Isostasy (blue) vs the crustal thickness grid of (Laske, Masters &amp; Pasyanos, 2013) (yellow). 
+           </figcaption>
+        </figure>     
+      </article>
+
       <article> 
         <h1>Review for the National (ASBOG) Geology Licensing Exam</h1>
         <p>I'm currently working on studying for the fundamentals portion of the professional geology licensing exam. I will use this space as a repository for useful terms, equations, and concepts.</p>
