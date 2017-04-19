@@ -53,6 +53,22 @@
       <h1>Principles of Geotechnical Engineering 6th Ed. by Braja M. Das</h1>
         <p>I'm currently reading through this textbook in order to expand my knowlege of geotechnical analysis. I intend to solve the example and exercise problems using MATLAB to reproduce the figures and perform the calculations.</p>
       <h2>Chapter 2: Origin of Soil and Grain Size</h2>
+      <h3><strong>SoilClass.m</strong></h3>
+        <p>This is an example of the functionality of the MATLAB script that I wrote based on the principles and information from this chapter. The US standard sieve information has to be stored in an .xlsx file organized into columns of sieve no.; opening (mm); mass on each sieve (g). For the purposes of this example, the data from Example 2.1 is used (see figure produced in that section). For the hydrometer analysis, the script prompts the user to enter information for the temperature of the soil sample, the specific gravity and the R value measured from the hydrometer. It then produces a grain-size (mm) vs time (min) plot that can be used with further analysis to add to the grain-size distribution curve produced from the US standard sieve analysis. The way I would do this analysis would be to dilute and agitate the remaining soil below the no. 200 sieve in a graduated cylinder so that all of the sediments were suspended. I would the wait a specified period of time until the sediments settled into layers, preferably recording the settlement with a video camera. I would then use the grain-size (mm) vs time (min) plot to calculate the grain sizes of different apparent layers in the sediments. I could then calculate the percent finer using the different thicknesses of the apparent layers vs the total thickness of settled sediments. I could then add the grain size vs percent finer on the same graph as the sand US standard sieve analysis and refine the classification of the sorting of the soil. </p>
+        <p>Is this a sand dominant soil sample measured using the US Standard Sieve Sizes in Sandinfo.xlsx [sieve;opening(mm);mass(g)]? (0/1) 1 <br>
+           Has there been hydrometer analysis been conducted? (0/1) 1 <br>
+           What is the temperature in °C (16-30)? 18 <br>
+           What is the specific gravity (Gs)(2.45-2.80, inc .05)? 2.65 <br>
+           What is the ASTM 152H Hydrometer Reading in R (0-60)? 30 <br>
+           Output: The sand is poorly graded (SP) (Holtz and Kovacs, 1981)</p>
+        <figure>
+           <a href="MATLAB_figures/HydrometerPlot_Dmm_t.png"><img src="MATLAB_figures/HydrometerPlot_Dmm_t.png"
+           width="400"
+           height="250"
+           alt="MATLAB figure showing grain size diameter D_mm (mm) vs time t (min) based on hydrometer measurements for silt/clay."></a>
+           <figcaption>MATLAB figure showing grain size diameter D_mm (mm) vs time t (min) based on hydrometer measurements R for silt/clay with the above measurements for temperature, and specific gravity of the soil. This could be used with additional measurements to refine the soil classification. 
+           </figcaption>
+        </figure>
       <h3><strong>Example 2.1</strong></h3>
         <p><strong>a.</strong> Plot a grain-size distribution curve.</p> 
        <figure>
