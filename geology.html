@@ -53,7 +53,69 @@
       <h1>Principles of Geotechnical Engineering 6th Ed. by Braja M. Das</h1>
         <p>I'm currently reading through this textbook in order to expand my knowlege of geotechnical analysis. I intend to solve the example and exercise problems using MATLAB to reproduce the figures and perform the calculations.</p>
       <h2>Chapter 2 Problems:</h2>
-      <h3><strong>2.1</strong><h3>
+      <h3><strong>2.7</strong></h3>
+      <p>The Sieve_Hydro_Class.m generated solution for the input table organized [U.S. Sieve No.|grain size (mm)| percent finer (%)] in SandInfo21.xlsx
+      <p>What was the number of sieves used in US standard sieve study? 4<br>
+         -------------------------------------------------------------<br>
+         MIT System<br>
+         -------------------------------------------------------------<br>
+         Greater than 2 mm = Gravel: 0%<br>
+         Passing 2 mm - 0.06mm = Sand: 100% - 73% = 27%<br>
+         Passing 0.06 mm - 0.002 mm = Silt: 73% - 9% = 64%<br>
+         Less than 0.002 mm = Clay: 9% - 0% = 9%<br>
+         -------------------------------------------------------------<br>
+         -------------------------------------------------------------<br>
+         USDA System<br>
+         -------------------------------------------------------------<br>
+         Greater than 2 mm = Gravel: 0%<br>
+         Passing 2 mm - 0.05mm = Sand: 100% - 66% = 34%<br>
+         Passing 0.05 mm - 0.002 mm = Silt: 66% - 9% = 57%<br>
+         Less than 0.002 mm = Clay: 9% - 0% = 9%<br>
+         -------------------------------------------------------------<br>
+         -------------------------------------------------------------<br>
+         AASHTO System<br>
+         -------------------------------------------------------------<br>
+         Greater than 2 mm = Gravel: 0%<br>
+         Passing 2 mm - 0.075mm = Sand: 100% - 80% = 20%<br>
+         Passing 0.075 mm - 0.002 mm = Silt: 80% - 9% = 71%<br>
+         Less than 0.002 mm = Clay: 9% - 0% = 9%<br>
+         -------------------------------------------------------------</p>
+         <figure>
+           <a href="MATLAB_figures/Prob2_7_GrainSizeDistribution.png"><img src="Prob2_7_GrainSizeDistribution.png"
+           width="400"
+           height="250"
+           alt="MATLAB figure showing particle-size distribution curve for US sieve and hydrometer analysis of Problem 2.7."></a>
+           <figcaption>MATLAB figure showing particle-size distribution curve for US sieve and hydrometer analysis of Problem 2.7.
+           </figcaption>
+         </figure>
+
+         <div class="Pics">
+           <figure>
+           <a href="MATLAB_figures/MITternary.png"><img src="MITternary.png"
+              width="400"
+              height="250"
+              alt="MATLAB figure showing the MIT ternary diagram using ternplot() by Carl Sandrock for US sieve and hydrometer data analysis of Problem 2.7."></a>
+            <figcaption>MATLAB figure showing the MIT ternary diagram using ternplot() by Carl Sandrock for US sieve and hydrometer data analysis of Problem 2.7.
+            </figcaption>
+           </figure>
+           <figure>
+           <a href="MATLAB_figures/USDAternary.png"><img src="USDAternary.png"
+              width="400"
+              height="250"
+              alt="MATLAB figure showing the USDA ternary diagram using ternplot() by Carl Sandrock for US sieve and hydrometer data analysis of Problem 2.7."></a>
+            <figcaption>MATLAB figure showing the USDA ternary diagram using ternplot() by Carl Sandrock for US sieve and hydrometer data analysis of Problem 2.7.
+            </figcaption>
+           </figure>
+           <figure>
+           <a href="MATLAB_figures/AASHTOternary.png"><img src="AASHTOternary.png"
+              width="400"
+              height="250"
+              alt="MATLAB figure showing the AASHTO ternary diagram using ternplot() by Carl Sandrock for US sieve and hydrometer data analysis of Problem 2.7."></a>
+            <figcaption>MATLAB figure showing the AASHTO ternary diagram using ternplot() by Carl Sandrock for US sieve and hydrometer data analysis of Problem 2.7.
+            </figcaption>
+           </figure>
+        </div>
+      <h3><strong>2.1</strong></h3>
       <p>The SoilClass.m generated solution for the input table organized [U.S. Sieve No.|opening (mm)|mass (g)] in SandInfo21.xlsx</p>
       <figure>
            <a href="MATLAB_figures/Prob2_1_grain_distribution.png"><img src="MATLAB_figures/Prob2_1_grain_distribution.png"
