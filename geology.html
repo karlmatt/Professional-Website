@@ -52,6 +52,24 @@
       <article>
       <h1>Principles of Geotechnical Engineering 6th Ed. by Braja M. Das</h1>
         <p>I'm currently reading through this textbook in order to expand my knowlege of geotechnical analysis. I intend to solve the example and exercise problems using MATLAB to reproduce the figures and perform the calculations.</p>
+      <h2>Chapter 2 Problems:</h2>
+      <h3><strong>2.1</strong><h3>
+      <p>The SoilClass.m generated solution for the input table organized [U.S. Sieve No.|opening (mm)|mass (g)] in SandInfo21.xlsx</p>
+      <figure>
+           <a href="MATLAB_figures/Prob2_1_grain_distribution.png"><img src="MATLAB_figures/Prob2_1_grain_distribution.png"
+           width="400"
+           height="250"
+           alt="MATLAB figure showing particle-size distribution curve for US sieve analysis of sand sample Problem 2.1."></a>
+           <figcaption>MATLAB figure showing particle-size distribution curve for US sieve analysis of sand sample Problem 2.1.
+           </figcaption>
+      </figure>
+      <p>The 60 percent finer diameter D60 : 0.423525 mm booksoln. 0.42 mm<br>
+         The 30 percent finer diameter D30 : 0.279533 mm booksoln. 0.27 mm<br>
+         The 10 percent finer diameter D10 : 0.146435 mm booksoln. 0.14 mm<br>
+         The uniformity coefficient, Cu = D60/D10 : 2.892243 booksoln. 3<br>
+         The coefficient of gradation, Cc = D30^2/D60xD10 : 1.259924 booksoln. 1.24<br>
+         Output: The sand is poorly graded (SP) (Holtz and Kovacs, 1981)</p>
+      <p></p>   
       <h2>Chapter 2: Origin of Soil and Grain Size</h2>
       <h3><strong>SoilClass.m</strong></h3>
         <p>This is an example of the functionality of the MATLAB script that I wrote based on the principles and information from this chapter. The US standard sieve information has to be stored in an .xlsx file organized into columns of sieve no.; opening (mm); mass on each sieve (g). For the purposes of this example, the data from Example 2.1 is used (see figure produced in that section). For the hydrometer analysis, the script prompts the user to enter information for the temperature of the soil sample, the specific gravity and the R value measured from the hydrometer. It then produces a grain-size (mm) vs time (min) plot that can be used with further analysis to add to the grain-size distribution curve produced from the US standard sieve analysis. The way I would do this analysis would be to dilute and agitate the remaining soil below the no. 200 sieve in a graduated cylinder so that all of the sediments were suspended. I would the wait a specified period of time until the sediments settled into layers, preferably recording the settlement with a video camera. I would then use the grain-size (mm) vs time (min) plot to calculate the grain sizes of different apparent layers in the sediments. I could then calculate the percent finer using the different thicknesses of the apparent layers vs the total thickness of settled sediments. I could then add the grain size vs percent finer on the same graph as the sand US standard sieve analysis and refine the classification of the sorting of the soil. </p>
